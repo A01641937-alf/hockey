@@ -16,15 +16,9 @@ function NavBar() {
                 </a>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav justify-content-end">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href={home}>Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href={combate}>Fight</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href={cobvideo}>collection</a>
-                        </li>
+                        <li class="nav-item"> <a class="nav-link active" aria-current="page" href={home}>Home</a> </li>
+                        <li class="nav-item"> <a class="nav-link" href={combate}>Fight</a> </li>
+                        <li class="nav-item"> <a class="nav-link" href={cobvideo}>collection</a> </li>
                     </ul>
                 </div>
             </div>
