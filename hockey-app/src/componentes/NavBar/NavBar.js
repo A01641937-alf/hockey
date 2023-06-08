@@ -1,7 +1,7 @@
 import React from "react";
 import img from '../../img/NHL-logo.png'
 import home from '../Home/Home'
-import combate from '../Targeta/Prueba_api'
+import combate from '../Tarjeta/Prueba_api'
 import cobvideo from '../Video/Video'
 
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous"/>
