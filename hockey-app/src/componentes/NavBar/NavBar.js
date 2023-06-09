@@ -27,4 +27,4 @@ function NavBar() {
     );
   }
   
-  export default Menu;
+  export default NavBar;
