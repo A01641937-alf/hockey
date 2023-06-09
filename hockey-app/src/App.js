@@ -16,7 +16,15 @@ import {
 function App() {
   return (
     <div className="App">
-      <h1>okey........</h1>
+      <div className="App">
+      <NavBar/>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/" element={<Peleas />} />
+        <Route path="/" element={<Video />} />
+      </Routes>
+      <Footer/>
+    </div>
     </div>
   );
 }
