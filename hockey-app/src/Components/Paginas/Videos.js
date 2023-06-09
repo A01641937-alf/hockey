@@ -12,8 +12,9 @@ const Videos = () => {
   const fight5 = hockeyData['fight 5'];
 
   return (
-    <div className="containerVideos">
+    <div className={styles.Container}>
       <h1 className={styles.Title_videos}>Top 5 NHL Fights</h1>
+      <h2 className={styles.num_Top}>Top 5</h2>
       <div className="card" style={{ width: '18rem', margin: 'auto', marginBottom: '2rem'}}>
         <img src="./Foto_Pelea5.jpeg" className="card-img-top" alt="" />
         <div className="card-body">
@@ -22,6 +23,7 @@ const Videos = () => {
           <Link to={fight1.video} className="btn btn-primary">Go to watch video</Link>
         </div>
       </div>
+      <h2 className={styles.num_Top}>Top 4</h2>
       <div className="card" style={{ width: '18rem', margin: 'auto', marginBottom: '2rem'}}>
         <img src="./Foto_Pelea4.jpeg" className="card-img-top" alt="" />
         <div className="card-body">
@@ -30,6 +32,7 @@ const Videos = () => {
           <Link to={fight2.video} className="btn btn-primary">Go to watch video</Link>
         </div>
       </div>
+      <h2 className={styles.num_Top}>Top 3</h2>
       <div className="card" style={{ width: '18rem', margin: 'auto', marginBottom: '2rem' }}>
         <img src="./Foto_Pelea3.jpeg" className="card-img-top" alt="" />
         <div className="card-body">
@@ -38,6 +41,7 @@ const Videos = () => {
           <Link to={fight3.video} className="btn btn-primary">Go to watch video</Link>
         </div>
       </div>
+      <h2 className={styles.num_Top}>Top 2</h2>
       <div className="card" style={{ width: '18rem', margin: 'auto', marginBottom: '2rem' }}>
         <img src="./Foto_Pelea2.jpeg" className="card-img-top" alt="" />
         <div className="card-body">
@@ -46,6 +50,7 @@ const Videos = () => {
           <Link to={fight4.video} className="btn btn-primary">Go to watch video</Link>
         </div>
       </div>
+      <h2 className={styles.num_Top}>Top 1</h2>
       <div className="card" style={{ width: '18rem', margin: 'auto', marginBottom: '2rem' }}>
         <img src="./Foto_Pelea1.jpeg" className="card-img-top" alt="" />
         <div className="card-body">
