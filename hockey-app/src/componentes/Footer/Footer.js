@@ -9,7 +9,7 @@ import combate from '../Tarjeta/Prueba_api'
 function Footer() {
     return (
         <>
-            <footer class="text-center text-lg-start bg-dark text-ligth">
+            <footer class="text-center text-lg-start bg-ligth text-darck">
 
                 <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
 
