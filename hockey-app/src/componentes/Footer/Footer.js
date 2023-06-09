@@ -1,5 +1,5 @@
 import React from "react";
-import img from '../../img/NHL-logo.png'
+import img from '../../img/NHL-Logo.png'
 import home from '../Home/Home'
 import combate from '../Tarjeta/Prueba_api'
 
