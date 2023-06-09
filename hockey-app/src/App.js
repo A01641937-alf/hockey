@@ -1,16 +1,24 @@
 import './App.css';
-import Video  from './componentes/Video/Video';
-import Peleas from './componentes/Tarjeta/Prueba_api';
-import Footer from './componentes/Footer/Footer';
-import NavBar from './componentes/NavBar/NavBar';
-import Home from './componentes/Home/Home';
+import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
+import Navbar from './Components/Navegacion/Navbar';
+import Home from './Components/Paginas/Home';
+import Stadistics from './Components/Paginas/Stadistics';
+import Videos from './Components/Paginas/Videos';
+
 
 function App() {
   return (
     <div className="App">
-      <NavBar/>
-      <Home/>
-      <Footer/>
+      
+        <Router>
+          <Navbar/>
+            <Routes>
+              <Route path='/' exact Component={Home}></Route>
+              <Route path='/stadistics' Component={Stadistics}></Route>
+              <Route path='/videos' Component={Videos}></Route>
+            </Routes>
+        </Router>
+
     </div>
   );
 }
