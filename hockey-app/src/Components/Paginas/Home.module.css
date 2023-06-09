@@ -1,0 +1,40 @@
+/* Home.module.css */
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .Title {
+    color: #002d62;
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-family: fantasy;
+  }
+  
+  .card {
+    background-color: #f7f7f7;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .Subtitle {
+    color: #ec7600;
+    font-family: fantasy;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .info {
+    color: #333;
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+  }
+  

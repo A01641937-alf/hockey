@@ -1,11 +1,12 @@
 .Title_videos {
-    color: rgb(255, 0, 0);
+    color: #ec7600;
     font-size: 50px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: fantasy;
   }
   .num_Top{
-    color: rgb(255, 255, 255);
+    color:  #ec7600;
+    font-family: fantasy;
     margin: auto;
-    background-color: rgb(68, 68, 68);
+    background-color:#002d62;
     width: 100px;
   }
