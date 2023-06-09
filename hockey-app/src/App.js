@@ -1,21 +1,20 @@
 import './App.css';
-import { TitlePage } from './componentes/Titulo';
-import VideoPlayer  from './componentes/Video';
-import Peleas from './componentes/Prueba_api';
+import Video  from './componentes/Video/Video';
+import Peleas from './componentes/Tarjeta/Prueba_api';
+import Footer from './componentes/Footer/Footer';
+import NavBar from './componentes/NavBar/NavBar';
+import Home from './componentes/Home/Home';
+
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <div>
-          <TitlePage/>
-        </div>
-        <div>
-          <VideoPlayer />
-        </div>
-      </header>
-      <div>
-        <Peleas/>
-      </div>
+      <NavBar/>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/" element={<Peleas />} />
+        <Route path="/" element={<Video />} />
+      </Routes>
+      <Footer/>
     </div>
   );
 }
