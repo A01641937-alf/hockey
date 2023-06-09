@@ -1,33 +1,62 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
+import hockeyData from './APIs/hockey_API.json';
+import styles from './Videos.module.css'
 
-export const Videos = () => {
+const Videos = () => {
+  // Accede a los datos de la API para cada enfrentamiento
+  const fight1 = hockeyData['fight 1'];
+  const fight2 = hockeyData['fight 2'];
+  const fight3 = hockeyData['fight 3'];
+  const fight4 = hockeyData['fight 4'];
+  const fight5 = hockeyData['fight 5'];
+
   return (
-    <div>
-        <h1 className='tituloVideos'>Top 5 Mejores peleas de la NHL</h1>
-        <ul>
-          <li>Top 5
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/aZXO4zLwNkA" 
-            title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-          </li>
-          <li>Top 4
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/bmm_cve2JQA" 
-            title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-          </li>
-          <li>Top 3
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/nK3yNgktCLk"
-            title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-          </li>
-          <li>Top 2
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/QIgfbfaTtLY" 
-            title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-          </li>
-          <li>Top 1
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/py5a999-rqA" 
-            title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-          </li>
-        </ul>
+    <div className="containerVideos">
+      <h1 className={styles.Title_videos}>Top 5 NHL Fights</h1>
+      <div className="card" style={{ width: '18rem', margin: 'auto', marginBottom: '2rem'}}>
+        <img src="./Foto_Pelea5.jpeg" className="card-img-top" alt="" />
+        <div className="card-body">
+          <h5 className="card-title">{fight1.fighter1} vs {fight1.fighter2}</h5>
+          <p className="card-text">{fight1.date}</p>
+          <Link to={fight1.video} className="btn btn-primary">Go to watch video</Link>
+        </div>
+      </div>
+      <div className="card" style={{ width: '18rem', margin: 'auto', marginBottom: '2rem'}}>
+        <img src="./Foto_Pelea4.jpeg" className="card-img-top" alt="" />
+        <div className="card-body">
+          <h5 className="card-title">{fight2.fighter1} vs {fight2.fighter2}</h5>
+          <p className="card-text">{fight2.date}</p>
+          <Link to={fight2.video} className="btn btn-primary">Go to watch video</Link>
+        </div>
+      </div>
+      <div className="card" style={{ width: '18rem', margin: 'auto', marginBottom: '2rem' }}>
+        <img src="./Foto_Pelea3.jpeg" className="card-img-top" alt="" />
+        <div className="card-body">
+          <h5 className="card-title">{fight3.fighter1} vs {fight3.fighter2}</h5>
+          <p className="card-text">{fight3.date}</p>
+          <Link to={fight3.video} className="btn btn-primary">Go to watch video</Link>
+        </div>
+      </div>
+      <div className="card" style={{ width: '18rem', margin: 'auto', marginBottom: '2rem' }}>
+        <img src="./Foto_Pelea2.jpeg" className="card-img-top" alt="" />
+        <div className="card-body">
+          <h5 className="card-title">{fight4.fighter1} vs {fight4.fighter2}</h5>
+          <p className="card-text">{fight4.date}</p>
+          <Link to={fight4.video} className="btn btn-primary">Go to watch video</Link>
+        </div>
+      </div>
+      <div className="card" style={{ width: '18rem', margin: 'auto', marginBottom: '2rem' }}>
+        <img src="./Foto_Pelea1.jpeg" className="card-img-top" alt="" />
+        <div className="card-body">
+          <h5 className="card-title">{fight5.fighter1} vs {fight5.fighter2}</h5>
+          <p className="card-text">{fight5.date}</p>
+          <Link to={fight5.video} className="btn btn-primary">Go to watch video</Link>
+        </div>
+      </div>
     </div>
-  )
+  );
+
 }
 
 export default Videos
