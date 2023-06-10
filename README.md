@@ -18,7 +18,13 @@ Configuración del Sql:
 
 2.- Ejecuta el codigo sql en un tu base de datos para crear la tabla.
 
-3.- En server/index modifica: <img width="189" alt="image" src="https://github.com/A01641937-alf/hockey/assets/88739339/2b9bf422-0cfa-411c-8725-01cccc6d5e5b">
+3.- En server/index modifica: 
+
+
+<img width="189" alt="image" src="https://github.com/A01641937-alf/hockey/assets/88739339/2b9bf422-0cfa-411c-8725-01cccc6d5e5b">
+
+
+
 Nota: Reemplace los valores los tuyos propios.
 
 
@@ -38,21 +44,47 @@ Para ejecutarlo sigua los siguientes pasos:
 
 Como funciona:
 
+
+
+
 <img width="309" alt="image" src="https://github.com/A01641937-alf/hockey/assets/88739339/60d34433-259a-4260-a49a-81f9d35a04b3">
+
+
+
+
 Devuelve todas las columnas de la base de datos, estas son: id, nombre, dorsal, Ult-equipo.
 
 
 <img width="309" alt="image" src="https://github.com/A01641937-alf/hockey/assets/88739339/c1705fde-2b15-412f-8693-da72f07c8642">
+
+
+
 Elimina toda la fila corespondiente al id.
 
 
 <img width="515" alt="image" src="https://github.com/A01641937-alf/hockey/assets/88739339/13a34d1f-d2f6-4ff5-af85-1588e15ffbed">
+
+
+
+
 Se actualiza un registro ya existente, este puede ser de cualquiera de sus columnas.
 
 
 <img width="501" alt="image" src="https://github.com/A01641937-alf/hockey/assets/88739339/7eea2c24-44a8-4fe0-b73d-0ec144db30a9">
+
+
+
 Agrega un nuevo Registro con todas sus columnas que son: id, nombre, dorsal, Ult-equipo.
 Nota: id es autoincremental.
+
+
+
+
+Diagrama de componentes:
+
+
+
+
 
 ![image](https://github.com/A01641937-alf/hockey/assets/88739339/58be0dc0-a35f-44ec-9f16-255c56e2618b)
 
